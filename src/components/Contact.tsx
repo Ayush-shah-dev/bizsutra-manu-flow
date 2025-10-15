@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -34,16 +34,6 @@ const Contact = () => {
                 <div>
                   <p className="text-sm opacity-70">Email us at</p>
                   <p className="font-semibold">sales@bizsutra.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="p-3 rounded-lg bg-white/10 backdrop-blur-sm">
-                  <Phone className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-sm opacity-70">Call us at</p>
-                  <p className="font-semibold">+91 98765 43210</p>
                 </div>
               </div>
 
@@ -91,14 +81,6 @@ const Contact = () => {
                 <Input
                   type="email"
                   placeholder="Work Email"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white/40"
-                />
-              </div>
-              
-              <div>
-                <Input
-                  type="tel"
-                  placeholder="Phone Number"
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white/40"
                 />
               </div>
