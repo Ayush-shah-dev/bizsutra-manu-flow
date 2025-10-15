@@ -60,11 +60,11 @@ const Pricing = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-2">Yearly</h3>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-bold">₹24,000</span>
-                  <span className="text-primary-foreground/80">/year</span>
+                  <span className="text-5xl font-bold">₹2,000</span>
+                  <span className="text-primary-foreground/80">/month</span>
                 </div>
                 <p className="text-sm text-primary-foreground/70 mt-2">
-                  Equivalent to ₹2,000/month
+                  Billed annually at ₹24,000/year
                 </p>
               </div>
               
