@@ -25,15 +25,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Products */}
+          {/* Features */}
           <div>
-            <h4 className="font-bold mb-4">Products</h4>
+            <h4 className="font-bold mb-4">Features</h4>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Project Management</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Procurement</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Inventory</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Asset Management</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Analytics</a></li>
+              <li><a href="/project-management" className="hover:opacity-100 transition-opacity">Project Management</a></li>
+              <li><a href="/procurement" className="hover:opacity-100 transition-opacity">Procurement</a></li>
+              <li><a href="/inventory" className="hover:opacity-100 transition-opacity">Inventory</a></li>
+              <li><a href="/asset-management" className="hover:opacity-100 transition-opacity">Asset Management</a></li>
+              <li><a href="/analytics" className="hover:opacity-100 transition-opacity">Analytics</a></li>
             </ul>
           </div>
 
@@ -42,10 +42,9 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Company</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li><a href="#" className="hover:opacity-100 transition-opacity">About Us</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Careers</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Blog</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Case Studies</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Contact</a></li>
+              <li><a href="/blog" className="hover:opacity-100 transition-opacity">Blog</a></li>
+              <li><a href="/case-studies" className="hover:opacity-100 transition-opacity">Case Studies</a></li>
+              <li><a href="/contact" className="hover:opacity-100 transition-opacity">Contact</a></li>
             </ul>
           </div>
 
