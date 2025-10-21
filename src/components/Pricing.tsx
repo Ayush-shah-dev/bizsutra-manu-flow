@@ -92,25 +92,25 @@ const Pricing = () => {
         <div className="max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold text-center mb-8">Compare with Market</h3>
           <div className="space-y-4 animate-fade-in">
-            <div className="flex items-center gap-4">
-              <div className="w-48 font-medium">Typical ERP Cost</div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <div className="w-full sm:w-40 font-medium text-sm sm:text-base">Typical ERP Cost</div>
               <div className="flex-1 h-12 bg-destructive/20 rounded-lg relative overflow-hidden">
                 <div 
-                  className="h-full bg-destructive/60 rounded-lg flex items-center justify-end px-4 text-sm font-semibold transition-all duration-1000"
+                  className="h-full bg-destructive/60 rounded-lg flex items-center justify-end px-2 sm:px-4 text-xs sm:text-sm font-semibold transition-all duration-1000"
                   style={{ width: '80%' }}
                 >
-                  ₹60,000 - ₹5,00,000/year
+                  <span className="whitespace-nowrap">₹60,000 - ₹5,00,000/year</span>
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="w-48 font-medium">Bizsutra ERP</div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <div className="w-full sm:w-40 font-medium text-sm sm:text-base">Bizsutra ERP</div>
               <div className="flex-1 h-12 bg-primary/20 rounded-lg relative overflow-hidden">
                 <div 
-                  className="h-full bg-primary rounded-lg flex items-center justify-end px-4 text-sm font-semibold text-primary-foreground transition-all duration-1000"
+                  className="h-full bg-primary rounded-lg flex items-center justify-end px-2 sm:px-4 text-xs sm:text-sm font-semibold text-primary-foreground transition-all duration-1000"
                   style={{ width: '25%', transitionDelay: '300ms' }}
                 >
-                  ₹24,000/year
+                  <span className="whitespace-nowrap">₹24,000/year</span>
                 </div>
               </div>
             </div>
