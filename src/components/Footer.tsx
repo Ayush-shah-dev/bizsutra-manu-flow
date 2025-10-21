@@ -58,7 +58,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 opacity-80">
                 <Phone className="h-4 w-4" />
-                +91 98765 43210
+                <a 
+                  href="https://wa.me/919574516060?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20Bizsutra%20ERP%20for%20my%20manufacturing%20business."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-100 transition-opacity"
+                >
+                  +91 95745 16060
+                </a>
               </li>
               <li><a href="#" className="hover:opacity-100 transition-opacity opacity-80">Help Center</a></li>
               <li><a href="#" className="hover:opacity-100 transition-opacity opacity-80">Documentation</a></li>

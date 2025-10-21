@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -34,6 +34,23 @@ const Contact = () => {
                 <div>
                   <p className="text-sm opacity-70">Email us at</p>
                   <p className="font-semibold">sales@bizsutra.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-lg bg-white/10 backdrop-blur-sm">
+                  <Phone className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="text-sm opacity-70">Call or WhatsApp</p>
+                  <a 
+                    href="https://wa.me/919574516060?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20Bizsutra%20ERP%20for%20my%20manufacturing%20business."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold hover:underline"
+                  >
+                    +91 95745 16060
+                  </a>
                 </div>
               </div>
 
@@ -103,8 +120,12 @@ const Contact = () => {
               <Button 
                 className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold py-6 text-lg"
                 size="lg"
+                type="button"
+                onClick={() => {
+                  window.open('https://wa.me/919574516060?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20Bizsutra%20ERP%20for%20my%20manufacturing%20business.', '_blank');
+                }}
               >
-                Send Request
+                Send Enquiry via WhatsApp
                 <Send className="ml-2 h-5 w-5" />
               </Button>
             </form>
