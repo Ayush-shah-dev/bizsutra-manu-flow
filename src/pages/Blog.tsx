@@ -1,7 +1,14 @@
+import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import manufacturingImage from "@/assets/blog-manufacturing-erp.jpg";
+import procurementImage from "@/assets/blog-procurement-automation.jpg";
+import inventoryImage from "@/assets/blog-inventory-management.jpg";
+import cloudErpImage from "@/assets/blog-cloud-erp.jpg";
+import financialImage from "@/assets/blog-financial-reporting.jpg";
 
 const Blog = () => {
   const blogPosts = [
@@ -11,7 +18,9 @@ const Blog = () => {
       author: "Rahul Sharma",
       date: "March 15, 2025",
       readTime: "8 min read",
-      category: "Manufacturing"
+      category: "Manufacturing",
+      image: manufacturingImage,
+      slug: "manufacturing-erp"
     },
     {
       title: "Complete Guide to Procurement Automation for SMEs",
@@ -19,7 +28,9 @@ const Blog = () => {
       author: "Priya Patel",
       date: "March 10, 2025",
       readTime: "10 min read",
-      category: "Procurement"
+      category: "Procurement",
+      image: procurementImage,
+      slug: "procurement-automation"
     },
     {
       title: "Inventory Management Best Practices for 2025",
@@ -27,7 +38,9 @@ const Blog = () => {
       author: "Amit Kumar",
       date: "March 5, 2025",
       readTime: "12 min read",
-      category: "Inventory"
+      category: "Inventory",
+      image: inventoryImage,
+      slug: "inventory-management"
     },
     {
       title: "How to Choose the Right ERP for Your Manufacturing Business",
@@ -35,21 +48,33 @@ const Blog = () => {
       author: "Sneha Reddy",
       date: "February 28, 2025",
       readTime: "15 min read",
-      category: "Buying Guide"
+      category: "Buying Guide",
+      image: cloudErpImage,
+      slug: "choosing-erp"
     },
     {
-      title: "Project Cost Overruns: Causes and Prevention Strategies",
+      title: "Real-Time Financial Reporting for Better Business Decisions",
       excerpt: "Manufacturing projects running over budget? Explore the top reasons for cost overruns and proven strategies to keep projects on track with real-time monitoring and control.",
       author: "Vikram Singh",
       date: "February 20, 2025",
       readTime: "9 min read",
-      category: "Project Management"
+      category: "Financial Management",
+      image: financialImage,
+      slug: "financial-reporting"
     }
   ];
 
   return (
-    <main className="min-h-screen">
-      <Navigation />
+    <>
+      <Helmet>
+        <title>Bizsutra ERP Blog | Manufacturing & ERP Insights</title>
+        <meta name="description" content="Insights, tips, and best practices for modern manufacturing management. Learn about ERP systems, inventory management, procurement automation, and more." />
+        <meta name="keywords" content="ERP blog, manufacturing blog, inventory management, procurement automation, business management India" />
+        <link rel="canonical" href="https://bizsutra.lovable.app/blog" />
+      </Helmet>
+      
+      <main className="min-h-screen">
+        <Navigation />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary via-primary/90 to-accent text-white">
@@ -75,7 +100,11 @@ const Blog = () => {
                 className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-lg transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20"></div>
+                <img 
+                  src={post.image} 
+                  alt={post.title}
+                  className="h-48 w-full object-cover"
+                />
                 
                 <div className="p-6 space-y-4">
                   <div className="flex items-center gap-2">
@@ -106,9 +135,11 @@ const Blog = () => {
                     </div>
                   </div>
 
-                  <Button variant="ghost" className="w-full group">
-                    Read More
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <Button variant="ghost" className="w-full group" asChild>
+                    <Link to={`/blog/${post.slug}`}>
+                      Read More
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
                   </Button>
                 </div>
               </article>
@@ -143,6 +174,7 @@ const Blog = () => {
 
       <Footer />
     </main>
+    </>
   );
 };
 

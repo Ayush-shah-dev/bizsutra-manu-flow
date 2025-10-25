@@ -12,6 +12,9 @@ import Inventory from "./pages/Inventory";
 import AssetManagement from "./pages/AssetManagement";
 import Analytics from "./pages/Analytics";
 import Blog from "./pages/Blog";
+import ManufacturingERP from "./pages/blog/ManufacturingERP";
+import ProcurementAutomation from "./pages/blog/ProcurementAutomation";
+import InventoryManagement from "./pages/blog/InventoryManagement";
 import CaseStudies from "./pages/CaseStudies";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +36,9 @@ const App = () => (
           <Route path="/asset-management" element={<AssetManagement />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/manufacturing-erp" element={<ManufacturingERP />} />
+          <Route path="/blog/procurement-automation" element={<ProcurementAutomation />} />
+          <Route path="/blog/inventory-management" element={<InventoryManagement />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
