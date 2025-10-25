@@ -41,9 +41,15 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <Button className="w-full" size="lg">
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button className="w-full" size="lg" asChild>
+                <a 
+                  href="https://wa.me/919574516060?text=Hi,%20I%20want%20to%20get%20started%20with%20the%20monthly%20plan%20of%20Bizsutra%20ERP."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Started
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -80,9 +86,16 @@ const Pricing = () => {
               <Button 
                 className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" 
                 size="lg"
+                asChild
               >
-                Start 14-Day Demo
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a 
+                  href="https://wa.me/919574516060?text=Hi,%20I%20want%20to%20claim%20the%20yearly%20plan%20of%20Bizsutra%20ERP%20and%20start%20my%2014-day%20demo."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Claim Now
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -125,8 +138,14 @@ const Pricing = () => {
           <p className="text-lg text-muted-foreground mb-6">
             Made in India for manufacturers. Try it free for 14 days.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8">
-            Book a Free Demo
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8" asChild>
+            <a 
+              href="https://wa.me/919574516060?text=Hi,%20I%20would%20like%20to%20book%20a%20free%20demo%20of%20Bizsutra%20ERP."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a Free Demo
+            </a>
           </Button>
         </div>
       </div>

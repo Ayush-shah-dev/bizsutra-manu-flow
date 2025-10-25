@@ -155,7 +155,13 @@ const ManufacturingERP = () => {
                   See how Bizsutra ERP can streamline your operations and improve profitability
                 </p>
                 <Button size="lg" asChild>
-                  <Link to="/contact">Request a Demo</Link>
+                  <a 
+                    href="https://wa.me/919574516060?text=Hi,%20I%20would%20like%20to%20request%20a%20demo%20of%20Bizsutra%20ERP%20for%20my%20manufacturing%20business."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Request a Demo
+                  </a>
                 </Button>
               </div>
             </div>

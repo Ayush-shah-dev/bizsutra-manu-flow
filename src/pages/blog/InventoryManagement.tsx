@@ -308,7 +308,13 @@ const InventoryManagement = () => {
                   Discover how Bizsutra ERP can reduce your inventory costs by up to 30%
                 </p>
                 <Button size="lg" asChild>
-                  <Link to="/contact">Schedule Demo</Link>
+                  <a 
+                    href="https://wa.me/919574516060?text=Hi,%20I%20want%20to%20learn%20how%20Bizsutra%20ERP%20can%20optimize%20my%20inventory%20management."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Schedule Demo
+                  </a>
                 </Button>
               </div>
             </div>

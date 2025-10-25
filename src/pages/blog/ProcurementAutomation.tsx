@@ -210,7 +210,13 @@ const ProcurementAutomation = () => {
                   See how Bizsutra ERP can reduce your procurement cycle time by 40%
                 </p>
                 <Button size="lg" asChild>
-                  <Link to="/contact">Get Started</Link>
+                  <a 
+                    href="https://wa.me/919574516060?text=Hi,%20I%20want%20to%20learn%20more%20about%20automating%20procurement%20with%20Bizsutra%20ERP."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Started
+                  </a>
                 </Button>
               </div>
             </div>
