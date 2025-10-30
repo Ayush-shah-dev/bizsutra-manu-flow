@@ -31,15 +31,29 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
+                asChild
               >
-                Request Demo <ArrowRight className="ml-2 h-5 w-5" />
+                <a 
+                  href="https://wa.me/919574516060?text=Hi,%20I%20would%20like%20to%20request%20a%20demo%20of%20Bizsutra%20ERP."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Request Demo <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white/10 font-semibold text-lg px-8 py-6 rounded-xl backdrop-blur-sm transition-all duration-300"
+                asChild
               >
-                <Play className="mr-2 h-5 w-5" /> Watch Video
+                <a 
+                  href="https://youtu.be/SQ8VAKuRMe4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Play className="mr-2 h-5 w-5" /> Watch Video
+                </a>
               </Button>
             </div>
 
