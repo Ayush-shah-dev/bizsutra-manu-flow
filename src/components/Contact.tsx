@@ -33,7 +33,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm opacity-70">Email us at</p>
-                  <p className="font-semibold">sales@bizsutra.com</p>
+                  <p className="font-semibold">sales@bizsutraerp.com</p>
                 </div>
               </div>
 
@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm opacity-70">Visit us at</p>
-                  <p className="font-semibold">Mumbai, Maharashtra, India</p>
+                  <p className="font-semibold">Ahmedabad,Gujarat, India</p>
                 </div>
               </div>
             </div>
