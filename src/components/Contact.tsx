@@ -66,11 +66,7 @@ const Contact = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div>
-                <div className="text-3xl font-bold">14 Days</div>
-                <div className="text-sm opacity-70">Free Demo</div>
-              </div>
+            <div className="grid grid-cols-2 gap-6 pt-8">
               <div>
                 <div className="text-3xl font-bold">₹2,000</div>
                 <div className="text-sm opacity-70">Per Month</div>

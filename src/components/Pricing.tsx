@@ -89,7 +89,7 @@ const Pricing = () => {
                 asChild
               >
                 <a 
-                  href="https://wa.me/919574516060?text=Hi,%20I%20want%20to%20claim%20the%20yearly%20plan%20of%20Bizsutra%20ERP%20and%20start%20my%2014-day%20demo."
+                  href="https://wa.me/919574516060?text=Hi,%20I%20want%20to%20claim%20the%20yearly%20plan%20of%20Bizsutra%20ERP."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -136,7 +136,7 @@ const Pricing = () => {
             Experience the simplicity and power of Bizsutra ERP
           </p>
           <p className="text-lg text-muted-foreground mb-6">
-            Made in India for manufacturers. Try it free for 14 days.
+            Made in India for manufacturers.
           </p>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8" asChild>
             <a 

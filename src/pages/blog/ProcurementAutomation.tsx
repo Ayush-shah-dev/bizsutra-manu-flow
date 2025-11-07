@@ -90,7 +90,7 @@ const ProcurementAutomation = () => {
                 <li><strong>Audit trail</strong> showing complete approval history</li>
               </ul>
               <p>
-                A Mumbai-based trading company reduced their approval time from 5 days to just 8 hours by implementing automated workflows, dramatically improving supplier relationships.
+                An Ahmedabad-based trading company reduced their approval time from 5 days to just 8 hours by implementing automated workflows, dramatically improving supplier relationships.
               </p>
 
               <h2>Step 2: Streamline Purchase Order Creation</h2>
